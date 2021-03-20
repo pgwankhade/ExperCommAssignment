@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cardstyle{
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cardstyle > div {
+  margin: 6px;
+}
+
+.newslistpage{
+  background-color: aqua;
+}
+
+.titlenews{
+  font-family: "Lato";
+    font-size: 2em;
+    color: #0b0c11;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+.navlist{
+  display: inline-flex;
+}
+
+.navlist> li{
+  margin: 6px;
+  color: antiquewhite;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar{
+  background-color: black;
+}
+
+.visitorinfo{
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.space-between{
+  justify-content:center;
+}
+.visitorinfo>label{
+  flex:33%;
+  padding: 10px;
+  width: 91px;
+}
+
+.visitorinfo>label>input{
+  padding: 10px;
+  width: 300px;
+  margin: 6px;
+}
+
+.visitorinfo>label> select{
+  padding: 10px;
+  width: 300px;
+  margin: 6px;
+}
+
+
+label {
+  text-align: right;
+  clear: both;
+  float:left;
+  margin-right:15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .visitorinfo>label{
+    padding: 10px;
+    width: 91px;
+  }
+  .visitorinfo>label>input{
+    padding: 10px;
+    width: 170px;
+    margin: 6px;
+  }
+  
+  .visitorinfo>label> select{
+    padding: 10px;
+    width: 170px;
+    margin: 6px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 320px) {
+  .visitorinfo>label{
+    padding: 10px;
+    width: 91px;
   }
-  to {
-    transform: rotate(360deg);
+  .visitorinfo>label>input{
+    padding: 10px;
+    width: 130px;
+    margin: 6px;
+  }
+  
+  .visitorinfo>label> select{
+    padding: 10px;
+    width: 130px;
+    margin: 6px;
   }
 }
